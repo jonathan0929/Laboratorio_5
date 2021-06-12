@@ -44,7 +44,10 @@ int main()
 void ImprimirLista (NODO *head) //Implementamos funcion
 {
 	NODO *NodoAux = head; // Este auxiliar para no perder el apuntador de la cabeza original y que corra la lista por medio del auxiliar. 
-
+	if (!head)
+    	{
+    		printf("La lista esta vacia");
+    	}
 	while ( NodoAux != NULL) // Mientras Nodo Auxiliar sea diferente de NULL, es uqe existe un dato
 	{
 		printf ("%d" , NodoAux -> dato); // Si existe que me imprima el dato del nodo
